@@ -1,3 +1,4 @@
+mod snippets;
 
 use std::sync::{Arc, Mutex};
 use tokio::time::sleep;
@@ -31,6 +32,8 @@ async fn main() {
     // print time difference in milliseconds
     println!("Time used: {}ms", (end - start).as_millis());
 
+    snippets::snippets::hello();
+    snippets::hello_mod();
 }
 
 async fn modify_value(inv: Arc<Mutex<i32>>) {
