@@ -291,6 +291,7 @@ name = "rover1"
 version = "0.1.0"
 dependencies = [
  "futures",
+ "num_cpus",
  "rayon",
  "tokio",
 ]
